@@ -5,31 +5,69 @@ import Cart from "./pages/Cart";
 import Categories from "./pages/Categories";
 import NotFound from "./pages/NotFound";
 import ProductDetails from "./pages/ProductDetails";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <>
+        <Header />
+        <Home />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "about",
-    element: <About />,
+    element: (
+      <>
+        <Header />
+        <About />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "cart",
-    element: <Cart />,
+    element: (
+      <>
+        <Header />
+        <Cart />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "categories",
-    element: <Categories />,
+    element: (
+      <>
+        <Header />
+        <Categories />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "*",
-    element: <NotFound />,
+    element: (
+      <>
+        <Header />
+        <NotFound />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "product",
-    element: <ProductDetails />,
+    element: (
+      <>
+        <Header />
+        <ProductDetails />
+        <Footer />
+      </>
+    ),
   },
 ]);
 
